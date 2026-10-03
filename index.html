@@ -60,17 +60,17 @@ button{font-family:inherit;cursor:pointer;border:0;color:#fff}
 const SLIDES=[
  ["carrera","Hay ausencias que no se explican fácilmente... pero esta merece una explicación."],
  ["fiesta","Sé que desaparecí cuando quizá lo que merecías era una respuesta."],
- ["bernal","No fue porque no importaras; simplemente no supe cómo enfrentar lo que sentía."],
- ["bacalar","El silencio fue mío. La paciencia, tuya."],
- ["bacalar2","Y aunque el tiempo pasó, nunca olvidé la manera en que estuviste."],
- ["mahagual","Perdón por dejar preguntas donde debí dejar palabras."],
- ["roma","Perdón por hacerte sentir que no eras importante."],
+ ["bernal","No fue porque no me importaras; simplemente no supe cómo enfrentar lo que sentía."],
+ ["bacalar","Yo guardé mucho silencio. Tú tuviste demasiada paciencia."],
+ ["bacalar2","Y aunque el tiempo pasó, nunca olvidé la manera en que siempre estuviste."],
+ ["mahagual","Perdón por dejar preguntas donde debí dejar palabras que dieran respuestas."],
+ ["roma","Perdón por hacerte sentir que no eras importante en mi vida. Eres lo más imprtante en ella"],
  ["pisa","No espero que mi ausencia se borre con una disculpa, pero sí quería reconocerla."],
  ["florencia","Gracias por todo lo que diste sin exigir nada a cambio."],
- ["venecia","Gracias por los momentos, las conversaciones y hasta por aquello que quizá nunca supe agradecer."],
+ ["venecia","Gracias por los momentos que vivimos, las risas, los bailes, las locuras, las conversaciones y hasta por aquello que quizá nunca supe agradecer."],
  ["chamonix","Hay personas que dejan huella incluso cuando uno se aleja… tú eres una de ellas."],
  ["eiffel","No sé qué lugar tenga hoy en tu vida, pero sí sé que agradezco haber coincidido contigo."],
- ["cu","Perdón por haberme ido sin decir nada. Gracias por haber estado. Y, sobre todo, gracias por haber significado tanto."]
+ ["cu","Perdón por haberme ido sin decir nada. Gracias por haber estado. Y, sobre todo, gracias por haber significado todo."]
 ];
 const N=SLIDES.length+1, FINAL=N-1, DUR=15000, TR=2600;
 const stage=document.getElementById('stage'), els=[];
@@ -81,7 +81,7 @@ SLIDES.forEach(([f,txt])=>{
   s.querySelector('p').textContent=txt; stage.appendChild(s); els.push(s);
 });
 const fin=document.createElement('section'); fin.className='slide final';
-fin.innerHTML='<h1>¡Te amo y te extraño mucho!<br><br><span>😘</span><br></h1><button id="restart" class="btn">Volver a empezar</button>';
+fin.innerHTML='<h1>¡Te amo Gabyta, te amo mucho y te extraño demasiado!<br><br><span>😘</span><br></h1><button id="restart" class="btn">Volver a empezar</button>';
 stage.appendChild(fin); els.push(fin);
 const restartBtn=document.getElementById('restart');
 

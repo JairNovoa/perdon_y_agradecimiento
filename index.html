@@ -81,7 +81,7 @@ SLIDES.forEach(([f,txt])=>{
   s.querySelector('p').textContent=txt; stage.appendChild(s); els.push(s);
 });
 const fin=document.createElement('section'); fin.className='slide final';
-fin.innerHTML='<h1>¡Te amo y te extraño mucho!<span>😘</span></h1><button id="restart" class="btn">Volver a empezar</button>';
+fin.innerHTML='<h1>¡Te amo y te extraño mucho!<br><br><span>😘</span><br></h1><button id="restart" class="btn">Volver a empezar</button>';
 stage.appendChild(fin); els.push(fin);
 const restartBtn=document.getElementById('restart');
 
